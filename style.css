@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    text-align: center;
+    padding: 50px;
+}
+#game{
+    width: 500px;
+    height: 500px;
+    border: 2px solid black;
+    margin: auto;
+    border-radius: 10px;
+    overflow: hidden;
+    
+
+}
+#btn{
+    padding: 0.5rem 2rem;
+    text-transform: uppercase;
+    margin: 1rem auto;
+    background-color: rgb(14, 200, 14);
+    outline: none;
+    border: 3px solid rgb(20, 24, 32);
+    border-radius: 10px;
+    cursor: pointer;
+}
+#btn:active{
+    background-color: red;
+}
+.slider{
+    height: 20px;
+    width: 200px;
+    background-color: red;
+    visibility: hidden;
+    border-radius: 10px;
+    position: relative;
+    
+    
+}
+#slider1{
+    visibility: visible;
+}
+.animate{
+    animation: slide 4s infinite linear;
+
+}
+@keyframes slide {
+    0%{
+        left: 0px;
+    }
+    50%{
+        left: 300px;
+    }
+    100%{
+        left: 0px;
+    }
+}
